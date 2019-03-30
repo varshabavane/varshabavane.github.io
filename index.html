@@ -6,34 +6,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
+    <style type="text/css" link="portfolio.css">
         .background{
             background-image: url(img/comp1.jpg);
             height:300px;
             width: 100%;
             margin: auto;
-        }
-        body{
-            background-color: grey;
+  }
+  body{
+            /* background-color: grey; */
             margin: 0;
-
         }
-           .navbar {
+ .navbar {
   margin-bottom: 0;
   background-color: black;
   opacity: 0.5;
   font-size: 12px !important;
   letter-spacing: 2px;
-}
+  /* padding-right:30px; */
+  /* padding-left:30px; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
+     }
 .navbar li a, .navbar .navbar-brand {
   color:#fff !important;
   padding: auto;
 }   
-
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: #054b85 !important;
   background-color: #fff !important;
@@ -46,6 +51,54 @@
 .navbar-default .navbar-toggle{
 
 }
+/* navbar end */
+#topbar {
+  background: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  /* margin:10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px; */
+}
+#topbar .contact-info a {
+  line-height: 1;
+  color: black;
+  float: left;
+  background-color: transparent; 
+}
+#topbar .contact-info a:hover {
+  color:white;
+  border-radius: 50%;
+  background-color: #054b85;
+}
+#topbar .contact-info i {
+  color: #054b85;
+  padding: 4px;
+  
+}
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 0.5px solid rgb(218, 215, 215);
+}
+#topbar .social-links a {
+  color:black;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  border-right: 0.5px solid rgb(218, 215, 215);
+  letter-spacing: 0px;
+  float:right;
+}
+#topbar .social-links a:hover {
+  color: white;
+  border-radius: 100px;
+  border: 1px transparent;
+  background-color: #054b85;
+}
+#topbar .social-links a:first-child {
+  border-right: 0;
+}
     </style>
     <script>
         function cv() {
@@ -57,31 +110,51 @@
 
 <body>
     <div class="background">
-        <!-- <div class="nav"> -->
-        <nav class="navbar navbar-default navbar-fixed-top ">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"></a><img src="img/logo3.jpg" height="50px;" width="50px;">Javascript Developer
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- </div> -->
-        <!-- <button onclick="cv()">ViewCv</button> -->
+        <!-- navStart -->
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top ">
+                <section id="topbar" class="d-none d-lg-block">
+                    <div class="container clearfix">
+                        <div class="contact-info float-left col-md-6">
+                            <i class='far fa-envelope'></i>
+                            varshab13bavane@gmail.com
+                            <i class="fa fa-phone"></i> +91 7208231682
+                        </div>
+                        <div class="social-links float-right col-md-6">
+                            <a href="https://www.linkedin.com/in/varsha-bavane-5847a8182" target="_blank" class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/varshabavane" target="_blank" class="git">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a><img src="img/logo3.jpg" height="50px;" width="50px;">Javascript
+                        Developer
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#pricing">PRICING</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navEnd -->
+        <!-- <button onclick="cv()">ViewCv</button> -->
     </div>
 </body>
 </body>

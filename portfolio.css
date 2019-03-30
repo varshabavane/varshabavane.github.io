@@ -1,0 +1,85 @@
+       .background{
+            background-image: url(img/comp1.jpg);
+            height:300px;
+            width: 100%;
+            margin: auto;
+  }
+  body{
+            background-color: grey;
+            margin: 0;
+        }
+ .navbar {
+  margin-bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+  /* padding-right:30px; */
+  /* padding-left:30px; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
+     }
+.navbar li a, .navbar .navbar-brand {
+  color:#fff !important;
+  padding: auto;
+}   
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #054b85 !important;
+  background-color: #fff !important;
+  border-radius:20px;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.navbar-default .navbar-toggle{
+
+}
+/* navbar end */
+#topbar {
+  background: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  /* margin:10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px; */
+}
+#topbar .contact-info a {
+  line-height: 1;
+  color: black;
+  float: left;
+  background-color: transparent; 
+}
+#topbar .contact-info a:hover {
+  color:white;
+  border-radius: 50%;
+  background-color: #054b85;
+}
+#topbar .contact-info i {
+  color: #054b85;
+  padding: 4px;
+  
+}
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 0.5px solid rgb(218, 215, 215);
+}
+#topbar .social-links a {
+  color:black;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  border-right: 0.5px solid rgb(218, 215, 215);
+  letter-spacing: 0px;
+  float:right;
+}
+#topbar .social-links a:hover {
+  color: white;
+  border-radius: 100px;
+  border: 1px transparent;
+  background-color: #054b85;
+}
+#topbar .social-links a:first-child {
+  border-right: 0;
+}
