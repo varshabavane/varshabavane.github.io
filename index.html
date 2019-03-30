@@ -3,39 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
         .background{
-            background-image: url();
-            border:1px solid black;
-            height:30px;
-            width: 100px;
+            background-image: url(img/comp1.jpg);
+            height:300px;
+            width: 100%;
             margin: auto;
         }
+        body{
+            background-color: grey;
+            margin: 0;
+
+        }
+           .navbar {
+  margin-bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  font-size: 12px !important;
+  letter-spacing: 2px;
+}
+.navbar li a, .navbar .navbar-brand {
+  color:#fff !important;
+  padding: auto;
+}   
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #054b85 !important;
+  background-color: #fff !important;
+  border-radius:20px;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.navbar-default .navbar-toggle{
+
+}
     </style>
     <script>
         function cv() {
-            // window.location=
+            window.location = 'resume/cv.html';
         }
+
     </script>
 </head>
 
 <body>
     <div class="background">
-        <div class="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">portfolio</a></li>
-                <li><a href="">contactUs</a></li>
-                <li><a href="">Gallery</a></li>
+        <!-- <div class="nav"> -->
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a><img src="img/logo3.jpg" height="50px;" width="50px;">Javascript Developer
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- </div> -->
+        <!-- <button onclick="cv()">ViewCv</button> -->
 
-
-            </ul>
-        </div>
     </div>
+</body>
 </body>
 
 </html>
