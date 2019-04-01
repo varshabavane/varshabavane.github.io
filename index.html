@@ -14,91 +14,194 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css" link="portfolio.css">
-        .background{
+        .background {
             background-image: url(img/comp1.jpg);
-            height:300px;
+            height: 100px;
             width: 100%;
             margin: auto;
-  }
-  body{
+        }
+
+        body {
             /* background-color: grey; */
             margin: 0;
         }
- .navbar {
-  margin-bottom: 0;
-  background-color: black;
-  opacity: 0.5;
-  font-size: 12px !important;
-  letter-spacing: 2px;
-  /* padding-right:30px; */
-  /* padding-left:30px; */
-  /* border-bottom-left-radius: 10px; */
-  /* border-top-right-radius: 10px; */
-     }
-.navbar li a, .navbar .navbar-brand {
-  color:#fff !important;
-  padding: auto;
-}   
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #054b85 !important;
-  background-color: #fff !important;
-  border-radius:20px;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
-.navbar-default .navbar-toggle{
 
-}
-/* navbar end */
-#topbar {
-  background: #fff;
-  padding: 10px 0;
-  font-size: 14px;
-  /* margin:10px;
+        .navbar {
+            margin-bottom: 0;
+            background-color: black;
+            opacity: 0.5;
+            font-size: 12px !important;
+            letter-spacing: 2px;
+            /* padding-right:30px; */
+            /* padding-left:30px; */
+            /* border-bottom-left-radius: 10px; */
+            /* border-top-right-radius: 10px; */
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+            padding: auto;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #054b85 !important;
+            background-color: #fff !important;
+            border-radius: 20px;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {}
+
+        /* navbar end */
+        #topbar {
+            background: #fff;
+            padding: 10px 0;
+            font-size: 14px;
+            /* margin:10px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px; */
-}
-#topbar .contact-info a {
-  line-height: 1;
-  color: black;
-  float: left;
-  background-color: transparent; 
-}
-#topbar .contact-info a:hover {
-  color:white;
-  border-radius: 50%;
-  background-color: #054b85;
-}
-#topbar .contact-info i {
-  color: #054b85;
-  padding: 4px;
-  
-}
-#topbar .contact-info .fa-phone {
-  padding-left: 20px;
-  margin-left: 20px;
-  border-left: 0.5px solid rgb(218, 215, 215);
-}
-#topbar .social-links a {
-  color:black;
-  padding: 4px 12px;
-  display: inline-block;
-  line-height: 1px;
-  border-right: 0.5px solid rgb(218, 215, 215);
-  letter-spacing: 0px;
-  float:right;
-}
-#topbar .social-links a:hover {
-  color: white;
-  border-radius: 100px;
-  border: 1px transparent;
-  background-color: #054b85;
-}
-#topbar .social-links a:first-child {
-  border-right: 0;
-}
+        }
+
+        #topbar .contact-info a {
+            line-height: 1;
+            color: black;
+            float: left;
+            background-color: transparent;
+        }
+
+        #topbar .contact-info a:hover {
+            color: white;
+            border-radius: 50%;
+            background-color: #054b85;
+        }
+
+        #topbar .contact-info i {
+            color: #054b85;
+            padding: 4px;
+
+        }
+
+        #topbar .contact-info .fa-phone {
+            padding-left: 20px;
+            margin-left: 20px;
+            border-left: 0.5px solid rgb(218, 215, 215);
+        }
+
+        #topbar .social-links a {
+            color: black;
+            padding: 4px 12px;
+            display: inline-block;
+            line-height: 1px;
+            border-right: 0.5px solid rgb(218, 215, 215);
+            letter-spacing: 0px;
+            float: right;
+        }
+
+        #topbar .social-links a:hover {
+            color: white;
+            border-radius: 100px;
+            border: 1px transparent;
+            background-color: rgb(74, 180, 230);
+        }
+
+        #topbar .social-links a:first-child {
+            border-right: 0;
+        }
+
+        /* homePagecssStart */
+        h2 {
+            padding-top: 50px;
+            text-decoration-style: solid;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        .profile p {
+            align-content: center;
+            text-align: center;
+            margin: auto;
+            color: grey;
+            font-size: 16px;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+
+        .profile button {
+            text-align: center;
+
+        }
+
+        .profilebutton {
+            align: center;
+        }
+
+        .profilebutton button {
+            align: center;
+            margin-left: 300px;
+            margin-right: 270px;
+            height: 40px;
+            width: 150px;
+            margin-top: 20px;
+            background-color: brgb(180, 177, 177);
+            opacity: 60;
+
+            /* position: absolute; */
+        }
+        .profilebutton button:hover{
+            border-color: #054b85;
+            background: #fff;
+            color:grey;
+        }
+
+        /* aboutMe */
+        .AboutMe {
+            margin-top: 20px;
+            background-color: #f6f6f6;
+            /* height: 500px; */
+            /* width: 100%; */
+        }
+
+        .aboutMeContainer {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            background: #fff !important;
+            border-radius: 20px;
+            /* border:1px solid blueviolet; */
+            /* height: 100px; */
+            /* width:300px; */
+        }
+
+        .aboutMeContainer p {
+            text-align: justify;
+            color:gray;
+        }
+
+        /* .skills {
+            margin: 20px;
+        } */
+
+        .well {
+            margin: 35px;
+            box-shadow: 1px gray;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow:10px 10px 10px grey;  
+
+        }
+        .well:hover{
+            /* border-top-color: rgb(96, 132, 209) ; */
+            border-top-color:rgb(74, 180, 230);
+        }
+        .well h4{
+            font-weight: bold;
+        }
     </style>
     <script>
         function cv() {
@@ -138,24 +241,113 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"></a><img src="img/logo3.jpg" height="50px;" width="50px;">Javascript
-                        Developer
+                        <a class="navbar-brand" href="#">Javascript Developer
+                        </a>
+                        <!-- <img src="img/logo3.jpg" height="50px;" width="50px;"> -->
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#services">SERVICES</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#pricing">PRICING</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="#Home">HOME</a></li>
+                            <li><a href="#services">ABOUT</a></li>
+                            <li><a href="#portfolio">PROJECT</a></li>
+                            <li><a href="#pricing">CONTACT</a></li>
+                            <li><a href="#contact">VIEW PROFILE</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
         <!-- navEnd -->
-        <!-- <button onclick="cv()">ViewCv</button> -->
     </div>
+    <!-- homePageStart -->
+    <div class="conatiner-fluid">
+        <div class="#Home">
+            <h2 style="text-align:center;">WELCOME TO MY<br> <span style="color:rgb(180, 177, 177);">PORTFOLIO</span></h2>
+            <div class="profile col-md-12">
+                <P>
+                    Looking forward to an opportunity for working in a dynamic, challenging environment,
+                    where I can utilize my skills for developing my career and for the growth of the
+                    organization and want to work in field of javascript Development as well as in WEB Desinging.</P>
+            </div>
+            <div class="profilebutton">
+                <center>
+                    <button class="btn" onclick="cv()"><i class="fa fa-arrow-right"></i><b>View CV</b></button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- homePageEnd -->
+
+    <!-- About Us -->
+    <div class="container-fluid AboutMe">
+        <div class="container aboutMeContainer">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/comp2.jpg" width="370px; height:500px;">
+                </div>
+                <br>
+                <div class="col-md-7">
+                    <h3 style="font-size:30px; font-weight:bolder;">ABOUT <span style="color:grey">ME</span></h3>
+
+                    <p>“My name is Pooja Prakash Salvi, and I’m currently working in Maxgen Technology Pvt Ltd. as PHP
+                        Developer from last April 2018. I have 1.5 years of experience working as PHP Developer.
+                        Completed
+                        graduation in 2016 from Kirti college at Dadar. ”
+                    </p>
+                    <p>“My name is Pooja Prakash Salvi, and I’m currently working in Maxgen Technology Pvt Ltd. as PHP
+                        Developer from last April 2018. I have 1.5 years of experience working as PHP Developer.
+                        Completed
+                        graduation in 2016 from Kirti college at Dadar. ”
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <center><h3 style="font-weight:bolder; font-size:30px;">SKILLS</h3></center>
+                <div class="col-md-3 well">
+                    <h4>hello</h4>
+                    <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA<br> ADAS WWGsajdajs dasbajb</p>
+                </div>
+                <div class="col-md-3 well">
+                    <h4>hello</h4>
+                    <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS <br>WWGsajdajs dasbajb</p>
+
+                </div>
+                <div class="col-md-3 well">
+                    <h4>hello</h4>
+                    <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA<br> ADAS WWGsajdajs dasbajb</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-6">
+                    <h3 style="color:grey;">Skills</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>javascript</li>
+                        <li>CSS,scss</li>
+                        <li>node.js</li>
+                        <li>angular js</li>
+                        <li>php</li>
+                        <li>My sql</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 style="color:grey;">Frameworks Known</h3>
+                    <ul>
+                        <li>Bootstrap3</li>
+                        <li>Ionic4</li>
+                        <li>AngularMaterial</li>
+                    </ul>
+                </div> -->
+    </div>
+    </div>
+
+    </div>
+
+
 </body>
 </body>
 
