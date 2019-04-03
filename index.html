@@ -22,7 +22,6 @@
         }
 
         body {
-            /* background-color: grey; */
             margin: 0;
         }
 
@@ -153,10 +152,11 @@
 
             /* position: absolute; */
         }
-        .profilebutton button:hover{
+
+        .profilebutton button:hover {
             border-color: #054b85;
             background: #fff;
-            color:grey;
+            color: grey;
         }
 
         /* aboutMe */
@@ -173,35 +173,87 @@
             padding-top: 20px;
             background: #fff !important;
             border-radius: 20px;
-            /* border:1px solid blueviolet; */
-            /* height: 100px; */
-            /* width:300px; */
         }
 
         .aboutMeContainer p {
             text-align: justify;
-            color:gray;
+            color: gray;
         }
-
-        /* .skills {
-            margin: 20px;
-        } */
 
         .well {
             margin: 35px;
             box-shadow: 1px gray;
             background: #fff;
-            border-radius: 2px;
-            box-shadow:10px 10px 10px grey;  
+            box-shadow: 10px 10px 10px grey;
 
         }
-        .well:hover{
-            /* border-top-color: rgb(96, 132, 209) ; */
-            border-top-color:rgb(74, 180, 230);
+
+        .well:hover {
+            border-top: 2px solid rgb(74, 180, 230);
         }
-        .well h4{
+
+        .well h4 {
             font-weight: bold;
+            color: grey;
         }
+
+        .designing {
+            width: 100%;
+        }
+
+        .designing .col-md-4:nth-child() {
+            align-content: center;
+            width: 33.33%;
+            margin: 0px;
+        }
+
+        .designing h3:nth-child() {
+            align-content: center;
+            color: white;
+        }
+
+        .designing .col-md-4:nth-child(odd) {
+            background: rgb(172, 169, 169);
+            height: 200px;
+        }
+
+        .designing .col-md-4:nth-child(even) {
+            background: rgb(148, 144, 144);
+            height: 200px;
+        }
+
+        .col-md-4 h3 {
+            color: white;
+            text-align: center;
+            padding-right: 30px;
+            padding-left: 30px;
+
+            /* margin: 30px; */
+        }
+
+        .col-md-4 p {
+            color: white;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-left: 30px;
+
+            /* margin: 20px; */
+            text-align: justify;
+        }
+        .contactbutton button {
+            height: 40px;
+            width: 150px;
+            margin-top: 20px;
+            background-color: brgb(180, 177, 177);
+            opacity: 60;
+        }
+        .contactbutton button:hover {
+            border-color: #054b85;
+            background: #fff;
+            color: grey;
+        }
+
+
     </style>
     <script>
         function cv() {
@@ -261,7 +313,7 @@
     </div>
     <!-- homePageStart -->
     <div class="conatiner-fluid">
-        <div class="#Home">
+        <div class="#Home" id="#Home">
             <h2 style="text-align:center;">WELCOME TO MY<br> <span style="color:rgb(180, 177, 177);">PORTFOLIO</span></h2>
             <div class="profile col-md-12">
                 <P>
@@ -283,7 +335,7 @@
         <div class="container aboutMeContainer">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="img/comp2.jpg" width="370px; height:500px;">
+                    <img src="img/v4.jpg" width="370px; height:500px;">
                 </div>
                 <br>
                 <div class="col-md-7">
@@ -305,7 +357,9 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <center><h3 style="font-weight:bolder; font-size:30px;">SKILLS</h3></center>
+                <center>
+                    <h3 style="font-weight:bolder; font-size:30px;">SKILLS</h3>
+                </center>
                 <div class="col-md-3 well">
                     <h4>hello</h4>
                     <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA<br> ADAS WWGsajdajs dasbajb</p>
@@ -318,37 +372,79 @@
                 <div class="col-md-3 well">
                     <h4>hello</h4>
                     <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA<br> ADAS WWGsajdajs dasbajb</p>
-
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-6">
-                    <h3 style="color:grey;">Skills</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>javascript</li>
-                        <li>CSS,scss</li>
-                        <li>node.js</li>
-                        <li>angular js</li>
-                        <li>php</li>
-                        <li>My sql</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3 style="color:grey;">Frameworks Known</h3>
-                    <ul>
-                        <li>Bootstrap3</li>
-                        <li>Ionic4</li>
-                        <li>AngularMaterial</li>
-                    </ul>
-                </div> -->
     </div>
     </div>
-
+    </div>
+    <!-- designing -->
+    <div class="conatiner-fluid">
+        <div class="row designing">
+            <div class="col-md-4">
+                <h3>Web Designing</h3>
+                <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb
+                    lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb</p>
+            </div>
+            <div class="col-md-4">
+                <h3>javascript Development</h3>
+                <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb
+                    lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Mobile App Development</h3>
+                <p>lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb
+                    lorwsd hdajkash akdmahs wdabsmsbma daa wsas wewSFSDADA ADAS WWGsajdajs dasbajb</p>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="container">
+        <h3 style="text-align:center; font-weight:bolder; font-size:30px;">CONTACT <span style="color:grey;">US</span></h3>
+        <div class="contact-form col-md-6">
+            <label>Username</label>
+            <input type="text" placeholder="name" class="form-control">
+            <label>Email</label>
+            <input type="text" placeholder="Email" class="form-control">
+            <label>contact Number</label>
+            <input type="text" placeholder="number" class="form-control">
+            <label>Address</label>
+            <input type="text" placeholder="city" class="form-control">
+            <br>
+            <div class="contactbutton">
+                <button class="btn"><b>Submit</b></button>
+            </div>
+        </div>
+        <div class="contact-form col-md-6">
+            <div class="col-md-6">
+                <span>
+                    <h3>Get in touch with me</h3>
+                </span>
+                <br>
+                <span style="font-size:15px;">
+                    <i class="glyphicon glyphicon-envelope" style="color:rgb(148, 144, 144); font-size:20px; margin: 0 10px 0px 0"></i>
+                    <span style="position:absolute">varshab13bavane@gmail.com</span>
+                </span>
+                <br>
+                <span style="font-size:15px;">
+                    <i class="glyphicon glyphicon-earphone" style="color:rgb(148, 144, 144); font-size:20px; margin: 0 10px 0px 0">
+                    </i> 7208231682</span>
+                <br>
+                <br>
+                
+                <span style="font-size:15px;">
+                    <i class="glyphicon glyphicon-map" style="color:rgb(148, 144, 144); font-size:20px; margin: 0 10px 0px 0"></i>kalyan,maharashtra
+                </span>
+            </div>
+        </div>
+    </div>
+    <div style="background:url(img/i.jpg); width:100%; height:100px;">
+        <footer class="footer;" style="background-color:black; opacity:1px; ">
+            <h5 style="text-align:center; padding:40px; font-weight: bolder;"><a href="#Home"><i class="fa fa-arrow-up" style="border: 1px solid grey; padding: 5px; margin:3px; border-radius:50%;"></i></a>varshab13bavane@gmail.com</h5>
+        </footer>
     </div>
 
 
-</body>
 </body>
 
 </html>
