@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
         .contact input{
             margin-bottom: 12px;
             border-radius: 3px;
+            height:40px;
         }
         .contact .button{
             height: 40px;
@@ -48,15 +50,35 @@
         .contact-info span{
             font-size:16px;
         }
+
+        h4{
+            font-weight:bolder; font-size:20px;
+             color:grey;
+        }
         .contact-info .glyphicon{
             color:rgb(148, 144, 144);
-            font-size:20px;
-            margin: 0 10px 0px 0
+            font-size:12px;
+            margin: 0 10px 0px 0;
+            /* border: 1px solid rgb(148, 144, 144); */
+            border: 1px solid black;
+
+            padding:10px;
+            border-radius:50%;
         }
         .contact-info .fa{
             color:rgb(148, 144, 144);
-            font-size:20px;
-            margin: 0 10px 0px 0
+            font-size:12px;
+            margin: 0 10px 0px 0;
+            /* border: 1px solid rgb(148, 144, 144); */
+            border: 1px solid black;
+
+            padding:10px;
+            border-radius:50%;
+        }
+        .fa:hover{
+           background-color: gray;
+           border:none;
+           color:white; 
         }
     </style>
 </head>
@@ -84,7 +106,7 @@
             <div class="contact-form col-md-6">
                 <div class="col-md-6 contact-info">
                     <span>
-                        <h3>Get in touch with me</h3>
+                        <h4>Get in touch with me</h4>
                     </span>
                     <span>
                         <i class="glyphicon glyphicon-envelope"></i>
@@ -94,13 +116,26 @@
                     <br>
                     <span>
                         <i class="glyphicon glyphicon-earphone"></i>
-                         <span>7208231682</span></span>
+                        <span>7208231682</span></span>
                     <br>
                     <br>
                     <span>
-                    <i class="fa fa-location-arrow"></i>
-                    <span>kalyan,maharashtra</span> 
+                        <i class="fa fa-location-arrow"></i>
+                        <span>kalyan,maharashtra</span>
                     </span>
+                    <hr style="border:1px solid grey; width:100%;">
+                    <h4>WE ARE SOCIAL</h4>
+
+                    <a href="https://www.linkedin.com/in/varsha-bavane-5847a8182" target="_blank" class="linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/varshabavane" target="_blank" class="git">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/varshabavane" target="_blank" class="git">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
