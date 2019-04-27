@@ -19,13 +19,105 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>.</title>
     <style>
+        .profile_section{
+/* margin-top: 100px; */
+        }
+        
+        .background {
+    background-image: url(../img/comp1.jpg);
+    height: 100px;
+    width: 100%;
+    margin: auto;
+}
+
+#topbar {
+    background: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: black;
+    float: left;
+    background-color: transparent;
+}
+
+#topbar .contact-info a:hover {
+    color: white;
+    border-radius: 50%;
+    background-color: #054b85;
+}
+
+#topbar .contact-info i {
+    color: #054b85;
+    padding: 4px;
+
+}
+
+#topbar .contact-info .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 0.5px solid rgb(218, 215, 215);
+}
+
+#topbar .social-links a {
+    color: black;
+    padding: 4px 12px;
+    display: inline-block;
+    border-right: 0.5px solid rgb(218, 215, 215);
+    float: right;
+}
+
+#topbar .social-links a:hover {
+    color: white;
+    border-radius: 100px;
+    border: 1px transparent;
+    background-color: rgb(74, 180, 230);
+}
+
+#topbar .social-links a:first-child {
+    border-right: 0; 
+}
+/* End */
+
+/* navBarStart */
+.navbar {
+    margin-bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+    padding: auto;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #054b85 !important;
+    background-color: #fff !important;
+    border-radius: 20px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/* navbar end */
+
+
         .header {
             height: 100PX;
             width: 100%;
             padding: 20px;
             /* background-color: rgb(22, 121, 121)
              */
-            background-color: rgb(74, 180, 230);
+            /* background-color: rgb(74, 180, 230); */
+            background-color:rgb(180, 177, 177);
 
         }
 
@@ -47,176 +139,264 @@
         }
 
         u {
-            color: rgb(74, 180, 230);
+            /* color: rgb(74, 180, 230); */
+            color:rgb(180, 177, 177);
+        }
+
+
+
+        /* footercss */
+        .footer {
+            background-color: black;
+            /* opacity: 0.5; */
+        }
+
+        .footer h5 {
+            text-align: center;
+            padding: 40px;
+            font-weight: bolder;
+            color: whitesmoke;
+        }
+
+        .footer_icon {
+            border: 1px solid grey;
+            padding: 5px;
+            margin: 3px;
+            border-radius: 50%;
+            color:grey;
+        }
+        .footer_icon:hover{
+         color:tan;
         }
     </style>
 </head>
 
 <body>
-    <!-- header -->
-    <section>
+
+    <div class="background">
+        <!-- navStart -->
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top ">
+                <section id="topbar" class="d-none d-lg-block">
+                    <div class="container clearfix">
+                        <div class="contact-info float-left col-md-6">
+                            <i class='far fa-envelope'></i>
+                            varshab13bavane@gmail.com
+                            <i class="fa fa-phone"></i> +91 7208231682
+                        </div>
+                        <div class="social-links float-right col-md-6">
+                            <a href="https://www.linkedin.com/in/varsha-bavane-5847a8182" target="_blank" class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/varshabavane" target="_blank" class="git">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Javascript Developer
+                        </a>
+                        <!-- <img src="img/logo3.jpg" height="50px;" width="50px;"> -->
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#Home">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#project">PROJECT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="resume/cv.html">VIEW PROFILE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+
+        <!-- header -->
+        <!-- <section>
         <div class="container-fluid header">
             <h3>Web Designer</h3>
         </div>
-    </section>
-    <!--  -->
-    <!-- <hr> -->
-    <br>
-    <section>
-        <div class="container-fluid first-div">
-            <div class="row">
-                <div class="col-md-3" style="margin-left:40px;">
-                    <div class="Profile_img">
-                        <center><img src="../img/v1.jpg" height="150px;" width="150px;" class="img-circle">
-                        </center>
-                    </div>
-                    <div>
-                        <br>
-                        <i class="material-icons">account_circle</i>
-                        Varsha Vasant Bavane <br>
-                        <i class="material-icons">stay_primary_portrait</i> 7208231682
-                        <br><i class="material-icons">email</i> varshab13bavane@gmail.com<br>
-                        <i class="material-icons">place</i> Rm No 4, vijusheth Bldng,Kongaon, kalyan-bhiwandi road,
-                        421311,Bhiwandi,Maharashtra
-                    </div>
-                    <br>
-                    <div>
-                        <h4><u>PERSONAL DETAILS</u></h4>
-                        <p>Marital Status:- Single</p>
-                        <p>Birthday :- 13 January, 1996</p>
-                        <p>Gender:- Female</p>
-                        <p>Nationality:- Indian</p>
-                    </div>
-                    <div>
-
-                        <h4><u>LANGUAGES KNOWN</u></h4>
-
-                        <ul>
-                            <li>English</li>
-                            <li>Marathi</li>
-                            <li>Hindi</li>
-                            <li>french Basic</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div>
-                        <!-- <center> -->
-                        <h4><u>EDUCATION</u></h4>
-                        <!-- </center> -->
-                        <b>BE(computer Science)</b>
-                        <h5>Pune University</h5>
-                        <h5>Dr. D. Y. Patil college of engineering, pune.</h5>
-                        <h5>Percentage:61.81</h5>
-                        <br>
-                        <b>HSC</b>
-                        <h5>Mumbai University</h5>
-                        <h5>L.D.S college wadeghar,kalyan.</h5>
-                        <h5>Percentage:46.83</h5>
-                        <br>
-                        <b>SSC</b>
-                        <h5>Mumbai University</h5>
-                        <h5>Aathgaon vidhya Mandir School kon.</h5>
-                        <h5>Percentage:74.91</h5>
-                    </div>
-                    <br>
-                    <div>
-                        <h4><u>INTRESTS</u></h4>
-                        <ul>
-                            <li>Web Designing</li>
-                            <li>Web Development</li>
-                            <li>JavaScript</li>
-                            <li>MobileApp Development</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md- 1 vr"></div>
-                <br>
-
-                <div class="col-md-7" style="margin-left:40px;">
-                    <!-- professional History -->
-                    <div class="row">
-                        <h4><u>PROFILE</u></h4>
-                        <p style="text-align:justify; margin:auto;">Looking forward to an opportunity for working in a dynamic, challenging environment,
-                            where I can utilize my skills for developing my career and for the growth of the
-                            organization and want to work in field of javascript Development as well as in WEB Desinging.
-
-                        </p>
-                    </div>
-                    <br>
-                    <!-- skills -->
-                    <div>
-                        <!-- <center> -->
-                        <h4><u>SKILLS</u></h4>
-                        <!-- </center> -->
-                        <ul>
-                            <li>Html5</li>
-                            <li>JavaScript</li>
-                            <li>css</li>
-                            <li>Bootstrap</li>
-                            <li>AngularJs</li>
-                            <li>nodeJs</li>
-                            <li>php</li>
-                            <li>Ionic</li>
-                            <li>MySql</li>
-                            <li>knowledge of github and bitbucket</li>
-                        </ul>
-                    </div>
-                    <!-- certificates -->
-
-                    <div class="row">
-                        <h4><u>PROFESSIONAL QUALIFICATION AND AFFILIATION</u></h4>
-                        <ul>
-                            <li>Done With 6 months course of Mobile App Developer in ionic4 </li>
-                            <li>Certificate in barkley's training</li>
-                            <li>cerficate course in English Typing in NOV-2011 with c grade</li>
-                            <li>Certicate For BE Project</li>
-                            <li>Complete 3 months of internship in maxgen technolgy pvt ltd. for php and web developer</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <!-- work history -->
-                    <div class="row">
+    </section> -->
+        <!--  -->
+        <!-- <hr> -->
+        <br>
+        <section class="profile_section">
+            <div class="container-fluid first-div">
+                <div class="row">
+                    <div class="col-md-3" style="margin-left:40px;">
+                        <div class="Profile_img">
+                            <center><img src="../img/v1.jpg" height="150px;" width="150px;" class="img-circle">
+                            </center>
+                        </div>
                         <div>
-                            <h4>
-                                <!-- <i class="material-icons" style="font-size:30px; padding-top:1px;">work</i> -->
-                                <u>WORK HISTORY</u></h4>
-                            <b>JavaScript Developer in lipilite Infotech Pvt Ltd.</b>
-                            <p>Shahad,kalyan</p>
+                            <br>
+                            <i class="material-icons">account_circle</i>
+                            Varsha Vasant Bavane <br>
+                            <i class="material-icons">stay_primary_portrait</i> 7208231682
+                            <br><i class="material-icons">email</i> varshab13bavane@gmail.com<br>
+                            <i class="material-icons">place</i> Rm No 4, vijusheth Bldng,Kongaon, kalyan-bhiwandi road,
+                            421311,Bhiwandi,Maharashtra
+                        </div>
+                        <br>
+                        <div>
+                            <h4><u>PERSONAL DETAILS</u></h4>
+                            <p>Marital Status:- Single</p>
+                            <p>Birthday :- 13 January, 1996</p>
+                            <p>Gender:- Female</p>
+                            <p>Nationality:- Indian</p>
+                        </div>
+                        <div>
+
+                            <h4><u>LANGUAGES KNOWN</u></h4>
+
+                            <ul>
+                                <li>English</li>
+                                <li>Marathi</li>
+                                <li>Hindi</li>
+                                <li>french Basic</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div>
+                            <!-- <center> -->
+                            <h4><u>EDUCATION</u></h4>
+                            <!-- </center> -->
+                            <b>BE(computer Science)</b>
+                            <h5>Pune University</h5>
+                            <h5>Dr. D. Y. Patil college of engineering, pune.</h5>
+                            <h5>Percentage:61.81</h5>
+                            <br>
+                            <b>HSC</b>
+                            <h5>Mumbai University</h5>
+                            <h5>L.D.S college wadeghar,kalyan.</h5>
+                            <h5>Percentage:46.83</h5>
+                            <br>
+                            <b>SSC</b>
+                            <h5>Mumbai University</h5>
+                            <h5>Aathgaon vidhya Mandir School kon.</h5>
+                            <h5>Percentage:74.91</h5>
+                        </div>
+                        <br>
+                        <div>
+                            <h4><u>INTRESTS</u></h4>
                             <ul>
                                 <li>Web Designing</li>
-                                <li>Web developer</li>
-                                <li>web designing Using Angular Js</li>
-                                <li>Two sites are launched while working with lipilite</li>
-                                <li><a href="">alphahr.com</a> and <a href="">kidsbasta.com</a></li>
+                                <li>Web Development</li>
+                                <li>JavaScript</li>
+                                <li>MobileApp Development</li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-md- 1 vr"></div>
+                    <br>
+
+                    <div class="col-md-7" style="margin-left:40px;">
+                        <!-- professional History -->
+                        <div class="row">
+                            <h4><u>PROFILE</u></h4>
+                            <p style="text-align:justify; margin:auto;">Looking forward to an opportunity for working
+                                in a dynamic, challenging environment,
+                                where I can utilize my skills for developing my career and for the growth of the
+                                organization and want to work in field of javascript Development as well as in WEB
+                                Desinging.
+
+                            </p>
+                        </div>
+                        <br>
+                        <!-- skills -->
                         <div>
-                            <b>Internship in Maxgen Technology Pvt Ltd.</b>
-                            <p>Turbhe, navi Mumbai</p>
-                            <p>Done Internship as well as having work experience in maxgen as php developer and web
-                                designing </p>
+                            <!-- <center> -->
+                            <h4><u>SKILLS</u></h4>
+                            <!-- </center> -->
                             <ul>
-                                <li>Dealing with web designing as well as php</li>
-                                <li>database Management using MySql</li>
+                                <li>Html5</li>
+                                <li>JavaScript</li>
+                                <li>css</li>
+                                <li>Bootstrap</li>
+                                <li>AngularJs</li>
+                                <li>nodeJs</li>
+                                <li>php</li>
+                                <li>Ionic</li>
+                                <li>MySql</li>
+                                <li>knowledge of github and bitbucket</li>
+                            </ul>
+                        </div>
+                        <!-- certificates -->
+
+                        <div class="row">
+                            <h4><u>PROFESSIONAL QUALIFICATION AND AFFILIATION</u></h4>
+                            <ul>
+                                <li>Done With 6 months course of Mobile App Developer in ionic4 </li>
+                                <li>Certificate in barkley's training</li>
+                                <li>cerficate course in English Typing in NOV-2011 with c grade</li>
+                                <li>Certicate For BE Project</li>
+                                <li>Complete 3 months of internship in maxgen technolgy pvt ltd. for php and web
+                                    developer</li>
                             </ul>
                         </div>
                         <br>
-                    </div>
-                    <div>
-                        <h4><u>DECLARATION</u></h4>
-                        <p>I, Varsha Bavane , hereby declare that the information contained here in is true and correct
-                            to the best of my knowledge and belief. </p>
-                        <br><br>
-                        <p>______________</p>
-                        <p>Varsha Bavane</p>
-                        <p>Date:</p>
+                        <!-- work history -->
+                        <div class="row">
+                            <div>
+                                <h4>
+                                    <!-- <i class="material-icons" style="font-size:30px; padding-top:1px;">work</i> -->
+                                    <u>WORK HISTORY</u></h4>
+                                <b>JavaScript Developer in lipilite Infotech Pvt Ltd.</b>
+                                <p>Shahad,kalyan</p>
+                                <ul>
+                                    <li>Web Designing</li>
+                                    <li>Web developer</li>
+                                    <li>web designing Using Angular Js</li>
+                                    <li>Two sites are launched while working with lipilite</li>
+                                    <li><a href="">alphahr.com</a> and <a href="">kidsbasta.com</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <b>Internship in Maxgen Technology Pvt Ltd.</b>
+                                <p>Turbhe, navi Mumbai</p>
+                                <p>Done Internship as well as having work experience in maxgen as php developer and web
+                                    designing </p>
+                                <ul>
+                                    <li>Dealing with web designing as well as php</li>
+                                    <li>database Management using MySql</li>
+                                </ul>
+                            </div>
+                            <br>
+                        </div>
+                        <div>
+                            <h4><u>DECLARATION</u></h4>
+                            <p>I, Varsha Bavane , hereby declare that the information contained here in is true and
+                                correct
+                                to the best of my knowledge and belief. </p>
+                            <br><br>
+                            <p>______________</p>
+                            <p>Varsha Bavane</p>
+                            <p>Date:</p>
 
+                        </div>
                     </div>
+
                 </div>
-
+            </div>
+        </section>
+        <div class="">
+            <div class="footer">
+                <h5><a href="#Home">
+                        <i class="fa fa-arrow-up footer_icon"></i></a>varshab13bavane@gmail.com
+                </h5>
             </div>
         </div>
-    </section>
+
+
 </body>
 
 </html>
