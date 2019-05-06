@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: rgb(233, 235, 236); */
+            background: whitesmoke;
+
+        }
+        .background {
+    background-image: url(img/comp1.jpg);
+    height: 100px;
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+/* topbarStart */
+#topbar {
+    background: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: black;
+    float: left;
+    background-color: transparent;
+}
+
+#topbar .contact-info a:hover {
+    color: white;
+    border-radius: 50%;
+    background-color: #054b85;
+}
+
+#topbar .contact-info i {
+    color: #054b85;
+    padding: 4px;
+
+}
+
+#topbar .contact-info .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 0.5px solid rgb(218, 215, 215);
+}
+
+#topbar .social-links a {
+    color: black;
+    padding: 4px 12px;
+    display: inline-block;
+    border-right: 0.5px solid rgb(218, 215, 215);
+    float: right;
+}
+
+#topbar .social-links a:hover {
+    color: white;
+    border-radius: 100px;
+    border: 1px transparent;
+    background-color: rgb(74, 180, 230);
+}
+
+#topbar .social-links a:first-child {
+    border-right: 0; 
+}
+/* End */
+
+/* navBarStart */
+.navbar {
+    margin-bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+    padding: auto;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #054b85 !important;
+    background-color: #fff !important;
+    border-radius: 20px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.profile{
+    margin-top: 110px;
+}
+
+
+        .row-left {
+            padding: 20px;
+            background: white;
+            border: 15px solid rgb(230, 229, 229);
+        }
+
+        .row-right {
+            margin: 20px 20px 20px 20px;
+            padding: 20px;
+            background: white;
+
+
+        }
+    .skills {
+  list-style: none;
+}
+
+.skills li::before {
+  content: "\2022";
+  color: grey;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+        .btn {
+            height: 40px;
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        .btn a {
+            color: black;
+        }
+
+        .btn:hover {
+            border-color: #054b85;
+            background: #fff;
+            color: grey;
+
+        }
+
+        .footer {
+            background-color: black;
+            margin-top: 30px;
+            /* opacity: 0.5; */
+        }
+
+        .footer h5 {
+            text-align: center;
+            padding: 40px;
+            font-weight: bolder;
+            color: whitesmoke;
+        }
+
+        .footer_icon {
+            border: 1px solid grey;
+            padding: 5px;
+            margin: 3px;
+            border-radius: 50%;
+            color: grey;
+        }
+
+        .footer_icon:hover {
+            color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <!-- navStart -->
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top ">
+                <section id="topbar" class="d-none d-lg-block">
+                    <div class="container clearfix">
+                        <div class="contact-info float-left col-md-6">
+                            <i class='far fa-envelope'></i>
+                            varshab13bavane@gmail.com
+                            <i class="fa fa-phone"></i> +91 7208231682
+                        </div>
+                        <div class="social-links float-right col-md-6">
+                            <a href="https://www.linkedin.com/in/varsha-bavane-5847a8182" target="_blank" class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/varshabavane" target="_blank" class="git">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Javascript Developer
+                        </a>
+                        <!-- <img src="img/logo3.jpg" height="50px;" width="50px;"> -->
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#Home">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#project">PROJECT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="resume/cv.html">VIEW PROFILE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- navbarEnd -->
+
+        <!--  -->
+        <div class="container profile">
+            <div class="col-md-3">
+                <div class="row row-left">
+                    <div class="profile_img">
+                        <img src="../img/v2.jpg" height="200px" width="100%;">
+                    </div>
+                    <br>
+                    <div class="profile_det" style="height:30px; background-color:grey; padding: 10px 10px 10px 10px;">
+                        <span style=""><i class="fa fa-list"></i> Contact Details</span><br>
+                    </div>
+                    <br>
+                    <div class="icons">
+                        <span><i class="fa fa-phone"></i> 72092333</span><br><br>
+                        <span><i class="fa fa-flag"></i> Kalyan, Indian</span><br><br>
+                        <span><i class="fa fa-envelope"></i>
+                            varshab13bavane@gmail.com</span><br>
+                    </div>
+                </div>
+                <div class="row row-left">
+                    <h4>Launched Projects</h4>
+                    <div class="project">
+                        <img src="../img/p1.png" height="170px" width="100%;">
+                    </div>
+                    <br>
+                    <div class="project">
+                        <img src="../img/p2.png" height="170px" width="100%;">
+                    </div>
+                    <br>
+
+                    <div class="project">
+                        <img src="../img/p3.png" height="170px" width="100%;">
+                    </div>
+                    <br>
+
+                    <div class="project">
+                        <img src="../img/p2.png" height="170px" width="100%;">
+                    </div>
+                    <br>
+                </div>
+                <div class="row row-left">
+                    <div class="profile_det" style="height:30px; background-color:grey; padding: 10px 10px 10px 10px;">
+                        <span style=""><i class="fa fa-list"></i> List of Launched Projects</span>
+                    </div>
+                    <br>
+                    <div class="list_proj">
+                        <span style=""><i class="fa fa-list"></i> Portfolio</span><br><br>
+                        <span style=""><i class="fa fa-list"></i> Alpha Hr</span><br><br>
+                        <span style=""><i class="fa fa-list"></i> Tornado Dance</span><br><br>
+                        <span style=""><i class="fa fa-list"></i> kidsbasta </span><br><br>
+                        <span style=""><i class="fa fa-list"></i> Foodies</span><br><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <div class="col-md-7 row-right">
+                <div class="col-md-12">
+                    <div class="profile_img">
+                        <!-- <img src="../img/v3.jpg"> -->
+                        <h3 style=""><b>Varsha Bavane</b></h3>
+                        <h4 style="color:grey; text-style:bold;">Web Designer And Web Developer</h4>
+                    </div>
+                    <div class="row">
+                        <p style="text-align:justify; padding-left:15px;">Looking forward to an opportunity for working
+                            in a dynamic, challenging environment,
+                            where I can utilize my skills for developing my career and for the growth of the
+                            organization and want to work in field of javascript Development as well as in WEB
+                            Desinging.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="color:grey; text-style:bold;">Role And Responsibility</h4>
+                            <ul class="skills">
+                                <li>Web Designing</li>
+                                <li>Web Development</li>
+                                <li>App Development</li>
+                                <li>javascript Developer</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 style="color:grey; text-style:bold;">Known Technology</h4>
+                            <ul class="skills">
+                                <li>HTML, HTML5</li>
+                                <li>CSS3</li>
+                                <li>JAVASCRIPT</li>
+                                <li>BOOTSTRAP</li>
+                                <li>NODE.JS</li>
+                                <li>ANGULAR JS</li>
+                                <li>CORE PHP</li>
+                                <li>IONIC 4</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <h4 style="color:grey; text-style:bold;">Education Details</h4>
+                        <table class="table table-responsive table-condensed table-striped hidden-xs">
+                            <thead>
+                                <tr>
+                                    <th>EDUCATION</th>
+                                    <th>UNiversity/Colleage Name</th>
+                                    <th>Percentage/ CGPA Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SSC</td>
+                                    <td>A. V. M. Kongaon ,Mumbai</td>
+                                    <td>74.91%</td>
+                                </tr>
+                                <tr>
+                                    <td>HSC</td>
+                                    <td>L. D. Sonawane collage, wadeghar-kalyan(w),Mumbai</td>
+                                    <td>46.83%</td>
+                                </tr>
+                                <tr>
+                                    <td>B.E(computer Science)</td>
+                                    <td>Dr. D. Y. Patil collage of Engineering, pune</td>
+                                    <td>62%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <h4 style="color:grey; text-style:bold;">Work Experience</h4>
+                        <b>JavaScript Developer in lipilite Infotech Pvt Ltd.</b>
+                        <p>Shahad,kalyan</p>
+                        <ul class="skills">
+                            <li>Web Designing</li>
+                            <li>Web developer</li>
+                            <li>web designing Using Angular Js</li>
+                            <li>Two sites are launched while working with lipilite</li>
+                            <li><a href="">alphahr.com</a> and <a href="">kidsbasta.com</a></li>
+                        </ul>
+
+                    </div>
+                    <br>
+                    <div>
+                            <b>Freelancer</b>
+                            <p>Done Internship as well as having work experience in maxgen as php developer and web
+                                designing </p>
+                            <ul class="skills">
+                                <li>Dealing with web designing as well as php</li>
+                                <li>database Management using MySql</li>
+                            </ul>
+                        </div>
+                        <br>
+    
+                    <div>
+                        <b>Internship in Maxgen Technology Pvt Ltd.</b>
+                        <p>Turbhe, navi Mumbai</p>
+                        <p>Done Internship as well as having work experience in maxgen as php developer and web
+                            designing </p>
+                        <ul class="skills">
+                            <li>Alpha Hr</li>
+                            <li>portfolio</li>
+                            <li>tornado Dance Academy</li>
+                            <li>Foodies</li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+                
+                <button class="btn"><a href="../VARSHA BAVANE.pdf" target="_blank"><i class="fa fa-arrow-down"></i></a><b>Download
+                        PDF</b></button>
+            </div>
+
+        </div>
+
+        <!--  -->
+        <!-- footer start -->
+        <div class="">
+            <div class="footer">
+                <h5><a href="#Home">
+                        <i class="fa fa-arrow-up footer_icon"></i></a>varshab13bavane@gmail.com
+                </h5>
+            </div>
+        </div>
+
+</body>
+
+</html>
