@@ -165,10 +165,16 @@ body {
 
 .about_profile img {
     padding-left: 10px;
-    width: 400px;
+    width: 100%;
     height: 400px;
 }
 
+@media only screen and (min-width: 400px) {
+    .about_profile img { 
+width: 100%;
+    }
+  }
+  
 .about_info h3 {
     font-size: 30px;
     font-weight: bolder;
